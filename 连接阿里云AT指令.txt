@@ -1,0 +1,21 @@
+ESP8266:
+
+AT+MQTTUSERCFG=0,1,"NULL","esp8266&k1lw9sOkV7x","7dcf3796b87814cb4be76d2569649ffb57fea430bff9cd38e6912ae0758c03ff",0,0,""
+
+AT+MQTTCLIENTID=0,"k1lw9sOkV7x.esp8266|securemode=2\,signmethod=hmacsha256\,timestamp=1739926540757|"   //数字后加反斜杠
+
+AT+MQTTCONN=0,"iot-06z00e5p5s5m01p.mqtt.iothub.aliyuncs.com",1883,1
+
+//AT+MQTTSUB=0,"/sys/k1lw9sOkV7x/esp8266/thing/service/property/set",1	//订阅数据
+
+
+WeChat:
+
+AT+MQTTPUB=0,"/k1lw9sOkV7x/esp8266/user/esp8266","{\"LightSwitch\":80}",1,0		//ESP8266向云端发送数据
+
+
+
+
+
+//需要解析的数据
++MQTTSUBRECV:0,"/sys/a1Zw81YmcId/ESP8266/thing/service/property/set",101,{"method":"thing.service.property.set","id":"1940735435","params":{"CuTemperature":0},"version":"1.0.0"}
