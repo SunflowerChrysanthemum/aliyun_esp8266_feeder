@@ -1,0 +1,106 @@
+/**index.wxss**/
+.page-container{
+    padding: 36rpx;
+    color: white;
+}
+.title-container{
+    text-align: center;
+}
+.title-container .retain-text{
+    margin-top: 50rpx;
+    font-size: 36rpx;
+}
+.title-container .retain-value{
+    margin-top: 20rpx;
+    font-size: 140rpx;
+    font-weight: bold;
+    font-family: "Helvetica", sans-serif;
+    display: inline-block;
+}
+.auto-feed{
+    background-color: black;
+    color: #fff;
+    border-radius: 36rpx;
+    padding: 28rpx 60rpx;
+}
+.auto-feed .auto-feed_title{
+    display: flex;
+    justify-content: space-between;
+}
+.auto-feed .auto-feed_title .auto-feed_icon{
+    width: 90rpx;
+    height: 90rpx;
+}
+.auto-feed .auto-feed_title .auto-feed_text{
+    margin-top: 24rpx;
+    margin-left: -100rpx;
+}
+.auto-feed .auto-feed_title .auto-feed_switch{
+    margin-top: 20rpx;
+}
+.scroll_contain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scroll_contain .line_icon{
+    background-color: black;
+    width: 580rpx;
+    height: 10rpx;
+    margin-top: 10rpx;
+}
+
+.hand-feed{
+    background-color: black;
+    color: #fff;
+    border-radius: 36rpx;
+    padding: 28rpx 60rpx;
+    margin-top: 30rpx;
+}
+.hand-feed_title{
+    display: flex;
+    justify-content: space-around;
+}
+.hand-feed_title .hand-feed_icon{
+    width: 68rpx;
+    height: 68rpx;
+    margin-top: 4rpx;
+    margin-left: 140rpx;
+}
+.hand-feed_title .hand-feed_text{
+    margin-top: 50rpx;
+    font-size: 36rpx;
+    margin-top: 15rpx;
+    margin-right: 180rpx;
+}
+.small_btn{
+    margin-bottom: 15rpx;
+}
+.big_btn{
+    margin-top: 15rpx;
+}
+.pen-retain{
+    background-color: black;
+    color: #fff;
+    border-radius: 36rpx;
+    padding: 28rpx 60rpx;
+    margin-top: 30rpx;
+    display: flex;
+}
+.pen-retain .pen-retain_text{
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 42rpx;
+    margin-top: 42rpx;
+    margin-left: 24rpx;
+}
+.pen-retain .pen-retain_value{
+    margin-left: 240rpx;
+    font-size: 104rpx;
+}
+.pen-retain .pen-retain_temp{
+    align-items: center;
+    font-size: 42rpx;
+    margin-top: 62rpx;
+    margin-left: 4rpx;
+}

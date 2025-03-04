@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="page-container">
+    <view class="title-container">
+        <view class="retain-text">
+            剩余猫粮重量
+        </view>
+        <view class="retain-value">
+            {{ total_weight }}
+        </view>
+        <text>g</text>
+        <view class="auto-feed">
+            <view class="auto-feed_title">
+                <view>
+                    <image class="auto-feed_icon" src="/Source/icon/plan.png" />
+                </view>
+                <view class="auto-feed_text" style="position: relative; left: -31rpx; top: 0rpx">
+                    自动喂食
+                </view>
+                <view class="auto-feed_value">
+                    <switch class="auto-feed_switch" bindchange="onSwitchChange" checked="{{false}}"
+                     color="#468C40"/>
+                </view>
+            </view>
+            <view class="scroll_contain">
+                <view>
+                    <image class="line_icon" src="/Source/icon/line.png" />
+                </view>
+                
+            </view>
+        </view>
+        <view class="hand-feed">
+            <view class="hand-feed_title">
+                <view>
+                    <image class="hand-feed_icon" src="/Source/icon/hand_feed.png" />
+                </view>
+                <view class="hand-feed_text">
+                    手动喂食
+                </view>
+            </view>
+            <button
+                class='small_btn' 
+                type="default" 
+                bindtap="small_clicked" 
+                disabled="{{small_btn_enable}}">
+                {{small_btn_text}}
+            </button>
+            <button
+                class='middle_btn' 
+                type="default" 
+                bindtap="middle_clicked" 
+                loading="{{defaultloading}}" 
+                disabled="{{middle_btn_enable}}"> 
+                中份
+            </button>
+            <button 
+                class='big_btn' 
+                type="default" 
+                bindtap="big_clicked" 
+                loading="{{defaultloading}}" 
+                disabled="{{big_btn_enable}}"> 
+                大份
+            </button>
+        </view>
+        <view class="pen-retain">
+            <view class="pen-retain_text">
+                盆余量
+            </view>
+            <view class="pen-retain_value">
+                {{ tub_weight }}
+            </view>
+            <view class="pen-retain_temp">
+                g
+            </view>
+        </view>
+    </view>
+  </view>
+</scroll-view>

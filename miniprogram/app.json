@@ -1,0 +1,35 @@
+{
+    "entryPagePath": "pages/index/index",
+    "pages": [
+      "pages/index/index",
+      "pages/mypage/mypage"
+    ],
+    "window": {
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "蜜柑喵喵",
+      "navigationBarBackgroundColor": "#ffffff",
+      "enablePullDownRefresh": true,
+      "backgroundColor": "#808080",
+      "backgroundTextStyle": "dark"
+    },
+    "tabBar": {
+        "selectedColor": "#b4282d",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/Source/icon/feed_noselect.jpg",
+                "selectedIconPath": "/Source/icon/feed_selected.jpg"
+            },
+            {
+              "pagePath": "pages/mypage/mypage",
+              "text": "个人",
+              "iconPath": "/Source/icon/cat_noselect.jpg",
+              "selectedIconPath": "/Source/icon/cat_selected.jpg"
+            }
+        ]
+    },
+    "style": "v2",
+    "lazyCodeLoading": "requiredComponents"
+}
